@@ -4,25 +4,65 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tesla</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
         <nav>
-          <ul>
-            <li><a href="img/Tesla-Wordmark-Red.png"></a></li>
-            <li><a href=""></a>Model S</li>
-            <li><a href=""></a>Model X</li>
-            <li><a href=""></a>Model 3</li>
-            <li><a href=""></a>Roadster</li>
-            <li><a href=""></a>Energy</li>
-            <li><a href=""></a>Магазин</li>
-            <li><a href=""></a>Войти</li>
-            <li><a href="img/menu.png"></a></li>
+          <div class="logo">
+            <a href="#"><img src="img/Tesla-Wordmark-Red.png" alt="" /></a>
+          </div>
+          <ul class="menu_1">
+            <li><a href="" class="item1 menu__item active">Model S</a></li>
+            <li><a href="" class="item2 menu__item">Model X</a></li>
+            <li><a href="" class="item3 menu__item">Model 3</a></li>
+            <li><a href="" class="item4 menu__item">Roadster</a></li>
+            <li><a href="" class="item5 menu__item">Energy</a></li>
+          </ul>
+          <ul class="menu_2">
+            <li><a href="" class="menu__item">Магазин</a></li>
+            <li><a href="" class="menu__item">Войти</a></li>
+            <li><img src="img/menu.png" alt="" /></li>
           </ul>
         </nav>
-      </div>
+        <div class="tesla_title">
+          <h1>Model S</h1>
+          <p>Добро пожаловать в будущее!</p>
+        </div>
+        <div class="tesla_info">
+          <div class="info_block_speed">
+            <img class="info_block_img-speed" src="img/Speed.png" alt="Speed" />
+            <div class="info_block_text">
+              <div class="info_block_text-top">2,7<span>сек</span></div>
+              <div class="info_block_text-bottom">0-100 км/час</div>
+            </div>
+          <div class="info_block_road">
+            <img class="info_block_img-road" src="img/Road icon.png" alt="Road" />
+            <div class="info_block_text">
+              <div class="info_block_text-top">632<span>км</span></div>
+              <div class="info_block_text-bottom">запас хода</div>
+            </div>
+          </div>
+          <div class="test_drive">
+              <img class="test_drive-img" src="img/Test drive 1.png" alt="Test Drive">
+          </div>
+          <div class="order_btn">
+              <div class="order_btn-text">
+                  Заказать
+              </div>
+          </div>
+        </div>
+    </div>
+    <div class="vector">
+        <a href="" class="go_bottom"><img src="img/Vector.png" alt=""></a>
+    </div>
     </header>
   </body>
 </html>
