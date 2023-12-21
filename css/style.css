@@ -4,6 +4,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
+  line-height: normal;
   color: #000;
   margin: 0;
   padding: 0;
@@ -12,8 +13,6 @@ body {
   width: 1440px;
   height: 2700px;
   margin: 0 auto;
-}
-.header {
 }
 nav {
   display: flex;
@@ -82,6 +81,7 @@ nav {
 .vector {
   display: flex;
   justify-content: center;
+  margin: 0;
 }
 .info_block_speed,
 .info_block_road {
@@ -92,14 +92,10 @@ nav {
   flex-wrap: wrap;
   margin-left: 81px;
 }
-.info_block_speed {
-  /* margin-left: 321px; */
-  margin-right: 81px;
-}
 .info_block_road {
   margin-right: 105px;
 }
-.info_block_img-speed {
+.info_block_speed-img {
   width: 46px;
   height: 34.127px;
   flex-shrink: 0;
@@ -107,7 +103,7 @@ nav {
   margin-right: 12px;
   margin-top: -2px;
 }
-.info_block_img-road {
+.info_block_road-img {
   width: 30.5px;
   height: 50px;
   flex-shrink: 0;
@@ -135,9 +131,29 @@ nav {
 .test_drive-img {
   display: flex;
   cursor: pointer;
-  min-width: 118px;
+  /* min-width: 118px; */
   margin-top: 10px;
   margin-right: 40px;
+}
+.test_drive {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  margin-right: 40px;
+}
+.test_drive-img {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  margin-right: 7px;
+}
+.test_drive-text {
+  color: #e51937;
+  text-align: center;
+  margin-top: 12px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 .order_btn {
   display: flex;
@@ -159,4 +175,210 @@ nav {
 }
 .vector {
   margin-top: 39px;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 768px;
+  }
+  .menu__item {
+    display: none;
+  }
+  .tesla_title {
+    min-height: 390px;
+    background-position: center bottom;
+    background-size: contain;
+  }
+  .tesla_info {
+    display: flex;
+    justify-content: flex-start;
+    justify-items: start;
+    flex-wrap: wrap;
+  }
+  nav {
+    margin: 24px 33px 80px 15px;
+  }
+  .tesla_title h1 {
+    font-size: 90px;
+  }
+  .tesla_title p {
+    margin-top: -9px;
+    font-size: 15px;
+  }
+  .test_drive-img {
+    color: #e51937;
+  }
+  .info_block_speed,
+  .info_block_road {
+    flex-wrap: nowrap;
+    margin: 0;
+    margin-bottom: 56px;
+    margin-right: 65px;
+  }
+  .info_block_speed {
+    margin-left: 140px;
+  }
+  .info_block_speed-img {
+    width: 65.924px;
+    height: 50.16px;
+    flex-shrink: 0;
+  }
+  .info_block_road-img {
+    width: 43.711px;
+    height: 71.657px;
+    flex-shrink: 0;
+  }
+  .info_block_text-top {
+    font-size: 50px;
+  }
+  .info_block_text-top span {
+    font-size: 20px;
+  }
+  .info_block_text-bottom {
+    font-size: 12px;
+  }
+  .test_drive {
+    margin-left: 174px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-right: 34px;
+  }
+  .test_drive-img {
+    width: 30.365px;
+    height: 30.365px;
+    flex-shrink: 0;
+    margin-right: 10px;
+  }
+  .test_drive-text {
+    color: #e51937;
+    text-align: center;
+    margin-top: 19px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .order_btn {
+    width: 220.839px;
+    height: 55.21px;
+    flex-shrink: 0;
+    background: #e51937;
+  }
+  .order_btn-text {
+    margin-top: 7px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .vector {
+    margin-top: 63px;
+  }
+  .go_bottom {
+    width: 28px;
+    height: 14px;
+    flex-shrink: 0;
+  }
+}
+@media (max-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+  .menu__item {
+    display: none;
+  }
+  .tesla_title {
+    min-height: 220px;
+    background-position: center bottom;
+    background-size: contain;
+  }
+  .tesla_info {
+    display: flex;
+    justify-content: flex-start;
+    justify-items: start;
+    flex-wrap: wrap;
+  }
+  nav {
+    margin: 5px 21px 30px 2px;
+  }
+  .tesla_title h1 {
+    font-size: 50px;
+    line-height: 61px;
+  }
+  .tesla_title p {
+    margin-top: -2px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .test_drive-img {
+    color: #e51937;
+  }
+  .info_block_speed,
+  .info_block_road {
+    flex-wrap: nowrap;
+    margin: 0;
+    margin-bottom: 43px;
+  }
+  .info_block_speed {
+    margin-left: 42px;
+    margin-right: 41px;
+  }
+  .info_block_speed-img {
+    width: 38.136px;
+    height: 28.7px;
+    flex-shrink: 0;
+  }
+  .info_block_road-img {
+    width: 25.286px;
+    height: 41px;
+    flex-shrink: 0;
+  }
+  .info_block_text-top {
+    font-size: 27px;
+  }
+  .info_block_text-top span {
+    font-size: 15px;
+  }
+  .info_block_text-bottom {
+    font-size: 10px;
+  }
+  .test_drive {
+    margin-left: 36px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-right: 25px;
+  }
+  .test_drive-img {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+    margin-right: 7px;
+  }
+  .test_drive-text {
+    color: #e51937;
+    text-align: center;
+    margin-top: 12px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .order_btn {
+    padding: 0;
+    width: 160px;
+    height: 40px;
+  }
+  .order_btn-text {
+    color: #fff;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+  .go_bottom {
+    width: 28px;
+    height: 14px;
+    flex-shrink: 0;
+  }
 }
